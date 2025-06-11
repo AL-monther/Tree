@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Rebdii-removebg-preview.png" type="image/x-icon">
+    <title>مرحباً بكم في شجرة عائلة الربدي</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin: 2rem 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: #34495e;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .tree-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .tree-button:hover {
+            background: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }        .credits {
+            margin-top: 2rem;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }        .developer-info {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+            transform: translateY(0);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .developer-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(44, 62, 80, 0.2);
+        }
+
+        .developer-image {
+            width: 85px;
+            height: 85px;
+            margin-bottom: 8px;
+            border-radius: 12px;
+            padding: 4px;
+            background: linear-gradient(135deg, #ffffff, #ffffff, #c3cfe2);
+            background-size: 200% 200%;
+            animation: gradientShift 5s ease infinite;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50% }
+            50% { background-position: 100% 50% }
+            100% { background-position: 0% 50% }
+        }
+
+        .developer-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .developer-text {
+            color: #2c3e50;
+            font-size: 0.95rem;
+            font-weight: bold;
+            margin-top: 2px;            background: linear-gradient(135deg, #2c3e50, #c00505);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .tree-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .feature {
+                padding: 1rem;
+            }
+
+            .developer-info {
+                bottom: 10px;
+                right: 10px;
+                padding: 8px;
+            }
+
+            .developer-image {
+                width: 60px;
+                height: 60px;
+            }
+
+            .developer-text {
+                font-size: 0.8rem;
+            }
+
+            .suggestion-input {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="developer-info">
+        <img src="images/image.png" alt="منفذ الشجرة" class="developer-image">
+        <span class="developer-text">منفذ الشجرة الالكترونية</span>
+    </div>
+    <div class="container">
+        <img src="images/Rebdii-removebg-preview.png" alt="شعار عائلة الربدي" class="logo">
+        <h1>مرحباً بكم في شجرة عائلة الربدي</h1>
+        
+        <p>هذا الموقع يقدم شجرة عائلة تفاعلية لعائلة الربدي، حيث يمكنك استكشاف العلاقات العائلية وتتبع الأنساب بسهولة. يتميز الموقع بواجهة سهلة الاستخدام وخيارات متعددة للتصفح والبحث.</p>        <div class="credits">
+            <p>تم تطوير وبرمجة هذا الموقع بواسطة المنذر محمد عبدالرحمن صالح الربدي</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>شجرة العائلة التفاعلية</h3>
+                <p>استكشف تاريخ عائلة الربدي من خلال شجرة عائلة تفاعلية وسهلة التصفح</p>
+            </div>            <div class="feature">
+                <h3>البحث السريع</h3>
+                <p>للبحث عن أي فرد، اكتب الاسم الثلاثي مثل: عبدالله محمد عبدالرحمن</p>
+            </div>            <div class="feature">
+                <h3>إحصائيات العائلة</h3>
+                <p>اطلع على إحصائيات مفصلة عن عدد أفراد العائلة وتوزيعهم</p>
+            </div>
+            <div class="feature">
+                <h3>اقتراحاتكم تهمنا</h3>
+                <form id="suggestionForm" onsubmit="sendSuggestion(event)">
+                    <textarea 
+                        class="suggestion-input" 
+                        placeholder="اكتب اقتراحك هنا..." 
+                        rows="4"
+                        style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc; resize: vertical;"
+                    ></textarea>
+                    <button 
+                        type="submit" 
+                        style="background: #2c3e50; color: white; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer;"
+                    >
+                        إرسال الاقتراح
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <button class="tree-button" onclick="window.location.href='home.html'">انتقل إلى الشجرة</button>
+        
+        <script>
+            function sendSuggestion(event) {
+                event.preventDefault();
+                const suggestion = document.querySelector('.suggestion-input').value;
+                if (!suggestion.trim()) {
+                    alert('الرجاء كتابة اقتراحك قبل الإرسال');
+                    return;
+                }
+                  const mailtoLink = `mailto:almonther1080@gmail.com?subject=اقتراح جديد لموقع شجرة عائلة الربدي&body=${encodeURIComponent(suggestion)}`;
+                window.location.href = mailtoLink;
+                
+                document.querySelector('.suggestion-input').value = '';
+                alert('شكراً لك! تم إرسال اقتراحك بنجاح');
+            }
+        </script>
+    </div>
+</body>
+</html>

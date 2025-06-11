@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Rebdii-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.css">
+  <link rel="stylesheet" href="style.css">
+  <title>شجرة عائلة الربدي</title>
+</head>
+<body>
+  <div class="switch">
+    <button class="theme-btn" onclick="toggleTheme()"></button>
+  </div>
+  <div class="controls">
+    <button class="control-btn" onclick="zoomIn()">➕</button>
+    <button class="control-btn" onclick="zoomOut()">➖</button>
+  </div>
+
+  <div class="info-bar">
+    عدد أفراد العائلة: <span id="family-count">0</span>
+    <button id="toggle-numbers" class="toggle-btn">تبديل الأرقام</button>
+    <button id="minimize-info" class="minimize-btn">🔍</button>
+    <div id="ibrahim-count" class="counter-item"></div>
+    <div id="abdulrahman-count" class="counter-item"></div>
+    <div id="abdullah-count" class="counter-item"></div>
+  </div>
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="ابحث عن اسم في الشجرة...">
+    <div class="search-suggestions" id="search-suggestions"></div>
+  </div>
+  
+  <div id="tree-wrapper">
+    <div id="tree-simple" class="Treant"></div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/search.js"></script>
+  <script src="scripts/ibrahim.js"></script>
+  <script src="scripts/abdulrahman.js"></script>
+  <script src="scripts/abdullah.js"></script>
+
+</body>
+</html>
